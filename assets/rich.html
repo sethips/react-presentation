@@ -1,0 +1,15 @@
+<table id="table"></table>
+
+<script>
+  const table = document.querySelector('#table');
+  getDateFromServer('/your/api')
+    .then(data => {
+        data.map((record, i) => `
+            <tr>
+                <td>${i}</td>
+                <td>${record}</td>
+            </tr>
+        `)
+        .forEach(rowHTML => table.appendChild(rowHTML));
+    });
+</script>

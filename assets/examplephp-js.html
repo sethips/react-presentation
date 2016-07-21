@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>0</td>
+        <td>foo</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>bar</td>
+    </tr>
+</table>
+
+<script>
+  var rows = document.querySelectorAll('tr');
+  for(var i = 0; i < rows.length; i++) {
+      rows[i].addEventListener('click', function() { /** ... **/ });
+  }
+</script>
